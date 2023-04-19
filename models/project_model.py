@@ -1,4 +1,4 @@
-from __init__ import db
+from app import db
 
 project_students = db.Table('project_students',
                             db.Column('project_id', db.Integer, db.ForeignKey('projects.id')),

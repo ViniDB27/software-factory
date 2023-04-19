@@ -1,0 +1,46 @@
+{% extends 'template.html' %} 
+
+{% load static %}
+
+{% block css %} 
+    <link rel="stylesheet" href="{% static 'css/project.css' %}" />
+{% endblock %} 
+
+
+{% block content %}
+<div class="banner-wrapper">
+    <img src="{% static 'img/pexels-pixabay-73910-large.jpg' %}" alt="horarios" />
+    <div class="title-container" >
+        <h1>Mart-Robot</h1>
+    </div>
+</div>
+<div class="about-container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae suscipit laborum. Voluptas corrupti laboriosam harum, molestiae minus nisi explicabo voluptatibus itaque doloribus soluta dolorum nostrum aliquam magnam non rem.
+    Unde a quasi excepturi dolor suscipit perspiciatis veritatis, amet expedita pariatur adipisci quaerat repellendus explicabo dolorum veniam aperiam doloribus vel repudiandae, molestiae tempore dolorem recusandae! Excepturi dignissimos quidem eaque cupiditate!
+    Error ratione, autem similique earum voluptatibus nostrum quia est optio quos delectus doloremque animi perferendis! Voluptatum temporibus porro debitis culpa quas et, corrupti deleniti, hic dolore, atque accusamus minus excepturi.
+    Sequi eos ipsum, iusto optio ea, odit aliquam voluptas non saepe excepturi recusandae culpa autem dolor! Omnis cupiditate est corporis impedit magnam, vitae eaque at, dignissimos obcaecati natus, vel voluptatem.
+    Illum a assumenda quas quibusdam aspernatur expedita vel, quasi, atque recusandae totam excepturi voluptate, asperiores nostrum doloremque tempora rem ex eaque animi cupiditate obcaecati ab iste nemo mollitia. Accusamus, libero!
+    Consequuntur corrupti itaque ad placeat deleniti, totam quos laudantium. Veritatis quasi voluptatum animi, ratione alias, perferendis ut a deserunt repudiandae accusamus ipsum quae nemo atque labore, recusandae veniam quo qui?
+    Facilis ea modi, nemo adipisci natus rem aliquid, blanditiis eaque dolores nostrum iure! Voluptate dolores a soluta sed architecto ex. Sint dolorum suscipit molestias illum totam ullam cumque. Accusantium, nihil?
+    Ullam perspiciatis esse enim? Minima porro explicabo, aspernatur dignissimos perspiciatis, quisquam repudiandae reiciendis cupiditate amet atque molestiae adipisci non, excepturi rerum expedita ducimus voluptatum eos! Ad omnis totam quaerat sequi.</p>
+</div>
+<div class="project-person" >
+    <div class="person-title-container" >
+        <h2>Responsaveis</h2>
+    </div>
+    <div class="person-avatar-container">
+        <div class="person-avatar" >
+            <div class="person-img">
+                <img src="{% static 'img/pexels-hasibullah-zhowandai-819530.jpg' %}" alt="avatar" />
+            </div>
+            <h3>Murilo Abreu</h3>
+        </div>
+        <div class="person-avatar" >
+            <div class="person-img">
+                <img src="{% static 'img/pexels-hasibullah-zhowandai-819530.jpg' %}" alt="avatar" />
+            </div>
+            <h3>Murilo Abreu</h3>
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,154 @@
+.banner-wrapper {
+    width: 100vw;
+    height: 250px;
+
+    background: #200b8b;
+
+    position: relative;
+}
+
+
+@media (min-width: 1200px) {
+    .banner-wrapper {
+        width: 100vw;
+        height: 500px;
+    
+        background: #200b8b;
+    
+        position: relative;
+
+        overflow: hidden;
+    }
+}
+
+.banner-wrapper img {
+    width: 100%;
+    position: absolute;
+    bottom: -300px;
+}
+
+.banner-wrapper .title-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, .25);
+}
+
+.banner-wrapper .title-container h1 {
+    color: #fff;
+    font-family: raleway;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 19px;
+    margin-bottom: 2.5rem;
+    padding-top: 12px;
+    text-transform: uppercase;
+}
+
+.about-container {
+    box-sizing: border-box;
+
+    width: 100vw;
+    min-height: 400px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    padding: 55px 30px;
+}
+
+@media (min-width: 1200px) {
+    .about-container {
+        padding: 55px 130px 0px;
+    }
+}
+
+.about-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 1100px;
+    text-align: justify;
+}
+
+.project-person {
+    box-sizing: border-box;
+
+    width: 100vw;
+    height: auto;
+}
+
+.project-person .person-title-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-person .person-title-container h2 {
+    font-family: raleway;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 19px;
+    margin-bottom: 2.5rem;
+    padding-top: 12px;
+    text-transform: uppercase;
+}
+
+.project-person .person-avatar-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-person .person-avatar-container .person-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 20px;
+
+    cursor: pointer;
+}
+
+.project-person .person-avatar-container .person-avatar .person-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.project-person .person-avatar-container .person-avatar .person-img img {
+    position: absolute;
+    height: 100%;
+    left: -20;
+}
+
+.project-person .person-avatar-container .person-avatar h3 {
+    font-family: raleway;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 19px;
+    margin-bottom: 2.5rem;
+    padding-top: 12px;
+    text-transform: uppercase;
+}
