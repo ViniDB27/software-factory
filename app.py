@@ -11,6 +11,10 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:postgres@localhos
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
+from models import student_model
+from models import project_model
+
+
 from controllers import home_controller
 from controllers import student_controller
 from controllers import project_controller

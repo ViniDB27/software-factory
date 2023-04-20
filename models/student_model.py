@@ -1,4 +1,5 @@
 from app import db
+from models.project_model import project_students
 
 
 class Student(db.Model):
@@ -11,6 +12,7 @@ class Student(db.Model):
     phone = db.Column(db.String, nullable=False)
     about = db.Column(db.Text, nullable=False)
     image = db.Column(db.String, nullable=False)
+    projects = db.relationship('Project', secondary=project_students, back_populates='students')
 
     def __init__(self, name, office, email, phone, about, image):
         self.name = name

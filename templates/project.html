@@ -1,15 +1,13 @@
 {% extends 'template.html' %} 
 
-{% load static %}
-
 {% block css %} 
-    <link rel="stylesheet" href="{% static 'css/project.css' %}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project.css') }}" />
 {% endblock %} 
 
 
 {% block content %}
 <div class="banner-wrapper">
-    <img src="{% static 'img/pexels-pixabay-73910-large.jpg' %}" alt="horarios" />
+    <img src="{{ url_for('static', filename='img/pexels-pixabay-73910-large.jpg') }}" alt="horarios" />
     <div class="title-container" >
         <h1>Mart-Robot</h1>
     </div>
@@ -31,16 +29,20 @@
     <div class="person-avatar-container">
         <div class="person-avatar" >
             <div class="person-img">
-                <img src="{% static 'img/pexels-hasibullah-zhowandai-819530.jpg' %}" alt="avatar" />
+                <img src="{{ url_for('static', filename='img/pexels-hasibullah-zhowandai-819530.jpg') }}" alt="avatar" />
             </div>
             <h3>Murilo Abreu</h3>
         </div>
         <div class="person-avatar" >
             <div class="person-img">
-                <img src="{% static 'img/pexels-hasibullah-zhowandai-819530.jpg' %}" alt="avatar" />
+                <img src="{{ url_for('static', filename='img/pexels-hasibullah-zhowandai-819530.jpg') }}" alt="avatar" />
             </div>
             <h3>Murilo Abreu</h3>
         </div>
     </div>
 </div>
-{% endblock %} 
+{% endblock %}
+
+{% block js %}
+    <script src="{{ url_for('static', filename='js/project.js') }}"></script>
+{% endblock %}

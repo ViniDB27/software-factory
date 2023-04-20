@@ -13,7 +13,7 @@ class Project(db.Model):
     title = db.Column(db.String, nullable=False)
     about = db.Column(db.Text, nullable=False)
     image = db.Column(db.String, nullable=False)
-    students = db.relationship('students', secondary=project_students, backref='posts')
+    students = db.relationship('Student', secondary=project_students, back_populates='projects')
 
     def __init__(self, title, about, image):
         self.title = title

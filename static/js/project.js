@@ -1,8 +1,8 @@
-const projects = document.querySelectorAll(".project-card");
+const projects = document.querySelectorAll(".person-avatar");
 
 projects.forEach((project) => {
   project.addEventListener("click", () => {
     const id = project.getAttribute("id");
-    window.location.href = `/projects/${id ?? "1"}`;
+    window.location.href = `/students/${id ?? "1"}`;
   });
 });

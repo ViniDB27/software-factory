@@ -46,9 +46,9 @@
         <img src="{{ url_for('static', filename='img/logo-header.png') }}" alt="unifacvest" />
 
         <nav>
-          <a href="#">Inicio</a>
-          <a href="#">Projetos</a>
-          <a href="#">Portifólios</a>
+          <a href="/">Inicio</a>
+          <a href="/projects/">Projetos</a>
+          <a href="/students/">Alunos</a>
           <a href="#">Responsaveis</a>
           <a href="#">Contato</a>
         </nav>
@@ -109,8 +109,8 @@
 
     <!-- JS default -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
-{#    {% block js %}#}
-{##}
-{#    {% endblock %}#}
+    {% block js %}
+
+    {% endblock %}
   </body>
 </html>
