@@ -7,30 +7,19 @@
 
 {% block content %}
     <div class="responsible-container">
-        <div class="responsible-wrapper" >
-            <div class="responsible-avatar" >
-                <img src="{{ url_for('static', filename='img/pexels-hasibullah-zhowandai-819530.jpg') }}" alt="horarios" />
+        {%  for teacher in teachers %}
+            <div class="responsible-wrapper" >
+                <div class="responsible-avatar" >
+                    <img src="{{ url_for('static', filename='img/' + teacher.image) }}" alt="horarios" />
+                </div>
+                <div class="responsible-about" >
+                    <h2>{{ teacher.name }}</h2>
+                    <h3>{{ teacher.office }}</h3>
+                    <p class="email" >{{ teacher.email }}</p>
+                    <p class="phone" >{{ teacher.phone }}</p>
+                    <p class="about" >{{ teacher.about }}</p>
+                </div>
             </div>
-            <div class="responsible-about" >
-                <h2>Marcio Sembay</h2>
-                <h3>Dr. Engenharia de Software</h3>
-                <p class="email" >marcio.sembay.professor@unifacvest.edu.br</p>
-                <p class="phone" >(47) 9 92024645</p>
-                <p class="about" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium in quia facilis voluptatem aut! Dolorem, veniam! Minus dolore excepturi nulla inventore at, molestiae sit doloremque eligendi voluptate laudantium doloribus!</p>
-            </div>
-        </div>
-
-        <div class="responsible-wrapper" >
-            <div class="responsible-avatar" >
-                <img src="{{ url_for('static', filename='img/pexels-hasibullah-zhowandai-819530.jpg') }}" alt="horarios" />
-            </div>
-            <div class="responsible-about" >
-                <h2>Cassandro Abreu</h2>
-                <h3>Dr. Cloud Computing</h3>
-                <p class="email" >cassandro.abreu.professor@unifacvest.edu.br</p>
-                <p class="phone" >(47) 9 92024645</p>
-                <p class="about" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium in quia facilis voluptatem aut! Dolorem, veniam! Minus dolore excepturi nulla inventore at, molestiae sit doloremque eligendi voluptate laudantium doloribus!</p>
-            </div>
-        </div>
+        {%  endfor %}
     </div>
 {% endblock %}

@@ -13,6 +13,7 @@ migrate = Migrate(app, db)
 
 from models import student_model
 from models import project_model
+from models import teachers_model
 
 
 from controllers import home_controller

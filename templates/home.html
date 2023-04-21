@@ -24,61 +24,18 @@
     <h2>Projetos</h2>
 </div>
 <div class="projects-container dragscroll">
-    <div class="project-card">
-        <div class="project-image">
-            <img src="{{ url_for('static', filename='img/pexels-pixabay-73910.jpg') }}" alt="horarios" />
+    {% for project in projects %}
+        <div class="project-card" id="{{ project.id }}">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='img/' + project.image) }}" alt="horarios" />
+            </div>
+            <div class="project-description">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.about[0:200] }}...</p>
+            </div>
         </div>
-        <div class="project-description">
-            <h3>Mart-robot</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
-        </div>
-    </div>
-    <div class="project-card">
-        <div class="project-image">
-            <img src="{{ url_for('static', filename='img/pexels-pixabay-73910.jpg') }}" alt="horarios" />
-        </div>
-        <div class="project-description">
-            <h3>Mart-robot</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
-        </div>
-    </div>
-    <div class="project-card">
-        <div class="project-image">
-            <img src="{{ url_for('static', filename='img/pexels-pixabay-73910.jpg') }}" alt="horarios" />
-        </div>
-        <div class="project-description">
-            <h3>Mart-robot</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
-        </div>
-    </div>
-    <div class="project-card">
-        <div class="project-image">
-            <img src="{{ url_for('static', filename='img/pexels-pixabay-73910.jpg') }}" alt="horarios" />
-        </div>
-        <div class="project-description">
-            <h3>Mart-robot</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
-        </div>
-    </div>
-    <div class="project-card">
-        <div class="project-image">
-            <img src="{{ url_for('static', filename='img/pexels-pixabay-73910.jpg') }}" alt="horarios" />
-        </div>
-        <div class="project-description">
-            <h3>Mart-robot</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
-        </div>
-    </div>
-    <div class="project-card">
-        <div class="project-image">
-            <img src="{{ url_for('static', filename='img/pexels-pixabay-73910.jpg') }}" alt="horarios" />
-        </div>
-        <div class="project-description">
-            <h3>Mart-robot</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
-        </div>
-    </div>
-    
+
+    {% endfor %}
 </div>
 {% endblock %}
 
