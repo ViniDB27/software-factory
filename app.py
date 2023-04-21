@@ -1,10 +1,15 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_mail import Message, Mail
 
 
 app = Flask(__name__)
 app.config.from_object('config')
+
+mail_setting = {
+
+}
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:postgres@localhost:5432/factory"
 
@@ -13,7 +18,8 @@ migrate = Migrate(app, db)
 
 from models import student_model
 from models import project_model
-from models import teachers_model
+from models import teacher_model
+from models import contact_model
 
 
 from controllers import home_controller

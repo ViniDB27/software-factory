@@ -1,7 +1,7 @@
 from flask import render_template
 from app import app
 
-from models.teachers_model import Teacher
+from models.teacher_model import Teacher
 
 
 @app.route('/responsible/')
