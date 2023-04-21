@@ -1,15 +1,17 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from flask_mail import Message, Mail
+from flask_mail import Mail
+from config import mail_setting
 
 
 app = Flask(__name__)
 app.config.from_object('config')
 
-mail_setting = {
+print("mail_setting", mail_setting)
 
-}
+app.config.update(mail_setting)
+mail = Mail(app)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:postgres@localhost:5432/factory"
 

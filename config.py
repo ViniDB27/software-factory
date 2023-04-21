@@ -1,12 +1,19 @@
-SQLALCHEMY_DATABASE_URI="postgresql://postgres:postgres@localhost:5432/factory"
+from dotenv import dotenv_values
 
-SECRET_KEY = 'f5bcb782-83ac-4eee-911f-18cb1d84122f'
-
-MAIL_SERVER = 'smtp.gmail.com'
-MAIL_PORT = 465
-MAIL_USE_TLS = False
-MAIL_USE_SSL = True
-MAIL_USERNAME = 'example@email.com'
-MAIL_PASSWORD = '123456'
+envs = dotenv_values(".env")
 
 
+SQLALCHEMY_DATABASE_URI = envs['DATABASE_URI']
+
+SECRET_KEY = envs['SECRET_KEY']
+
+mail_setting = {
+    'MAIL_SERVER':  envs['MAIL_SERVER'],
+    'MAIL_PORT': int(envs['MAIL_PORT']),
+    'MAIL_USE_TLS': True,
+    #bool(envs['MAIL_USE_TLS']),
+    'MAIL_USE_SSL': False,
+    #bool(envs['MAIL_USE_SSL']),
+    'MAIL_USERNAME': envs['MAIL_USERNAME'],
+    'MAIL_PASSWORD': envs['MAIL_PASSWORD']
+}
