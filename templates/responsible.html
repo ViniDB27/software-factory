@@ -1,0 +1,36 @@
+{% extends 'template.html' %} 
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/responsible.css') }}" />
+{% endblock %}
+
+
+{% block content %}
+    <div class="responsible-container">
+        <div class="responsible-wrapper" >
+            <div class="responsible-avatar" >
+                <img src="{{ url_for('static', filename='img/pexels-hasibullah-zhowandai-819530.jpg') }}" alt="horarios" />
+            </div>
+            <div class="responsible-about" >
+                <h2>Marcio Sembay</h2>
+                <h3>Dr. Engenharia de Software</h3>
+                <p class="email" >marcio.sembay.professor@unifacvest.edu.br</p>
+                <p class="phone" >(47) 9 92024645</p>
+                <p class="about" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium in quia facilis voluptatem aut! Dolorem, veniam! Minus dolore excepturi nulla inventore at, molestiae sit doloremque eligendi voluptate laudantium doloribus!</p>
+            </div>
+        </div>
+
+        <div class="responsible-wrapper" >
+            <div class="responsible-avatar" >
+                <img src="{{ url_for('static', filename='img/pexels-hasibullah-zhowandai-819530.jpg') }}" alt="horarios" />
+            </div>
+            <div class="responsible-about" >
+                <h2>Cassandro Abreu</h2>
+                <h3>Dr. Cloud Computing</h3>
+                <p class="email" >cassandro.abreu.professor@unifacvest.edu.br</p>
+                <p class="phone" >(47) 9 92024645</p>
+                <p class="about" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium in quia facilis voluptatem aut! Dolorem, veniam! Minus dolore excepturi nulla inventore at, molestiae sit doloremque eligendi voluptate laudantium doloribus!</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

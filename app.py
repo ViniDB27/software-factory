@@ -18,6 +18,8 @@ from models import project_model
 from controllers import home_controller
 from controllers import student_controller
 from controllers import project_controller
+from controllers import responsible_controller
+from controllers import contact_controller
 
 if __name__ == '__main__':
     app.run()
