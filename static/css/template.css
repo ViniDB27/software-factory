@@ -102,6 +102,11 @@ body {
     align-items: center;
 }
 
+navbar-main img {
+    max-width: 270px;
+    width: 270px !important;
+}
+
 @media (min-width: 1200px) {
     .navbar-main {
         justify-content: space-between;
@@ -146,11 +151,6 @@ body {
 }
 
 
-
-
-
-
-
 .shortcut-links-container {
     display: none;
 }
@@ -168,7 +168,9 @@ body {
         right: 0px;
         top: 10px;
     
-        padding-left: 50px;
+        padding-left: 100px;
+
+        padding-top: 3px;
     
         clip-path: polygon(5% 0, 100% 0, 100% 100%, 2% 100%);
     
@@ -190,7 +192,7 @@ body {
     font-weight: 500;
     text-decoration: none;
 
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 
@@ -261,15 +263,15 @@ body {
     color: #fff;
 }
 
+.footer-wrapper .footer-section a {
+    text-decoration: none;
+}
+
 .footer-wrapper .footer-section img.footer-logo {
     max-width: 270px;
     margin-bottom: 30px;
 }
 
-.footer-wrapper .footer-section img.qrcode-mec {
-    max-width: 270px;
-    margin-top: 10px;
-}
 
 .footer-line {
     box-sizing: border-box;
@@ -291,3 +293,4 @@ body {
     color: #fff;
     font-size: .8rem;
 }
+
