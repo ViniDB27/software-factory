@@ -40,12 +40,20 @@
     box-sizing: border-box;
 
     width: 100%;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
     margin-top: 20px;
 }
+
+@media (min-width: 1200px) {
+    .contact-container .form-group {
+        max-width: 500px;
+    }
+}
+
 
 .contact-container .form-group label {
     font-family: raleway;
@@ -83,6 +91,7 @@
 
 .contact-container button.btn {
     width: 100%;
+    max-width: 300px;
     height: 40px;
     border: none;
     border-radius: 5px;
@@ -94,6 +103,12 @@
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+    .contact-container button.btn {
+        max-width: 500px;
+    }
 }
 
 .contact-container button:hover {

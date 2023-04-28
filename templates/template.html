@@ -29,10 +29,24 @@
   <body>
     <header class="header-container">
       <div class="header-mobile-section-icons">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+        <a href="https://www.facebook.com/CentroUniversitarioUnifacvest" target="_blank">
+            <img src="{{ url_for('static', filename='img/facebook.png') }}" alt="unifacvest" />
+          </a>
+          <a href="https://twitter.com/UNIFACVESTPLAY" target="_blank">
+            <img src="{{ url_for('static', filename='img/twitter.png') }}" alt="unifacvest" />
+          </a>
+          <a href="https://www.instagram.com/unifacvestplay" target="_blank">
+            <img src="{{ url_for('static', filename='img/instagram.png') }}" alt="unifacvest" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCFWHKim0mysvaDrwBIM5NIA" target="_blank">
+            <img src="{{ url_for('static', filename='img/youtube.png') }}" alt="unifacvest" />
+          </a>
+          <a href="https://web.whatsapp.com/send?phone=554932254114" target="_blank">
+            <img src="{{ url_for('static', filename='img/whatsapp.png') }}" alt="unifacvest" />
+          </a>
+          <a href="https://open.spotify.com/show/5VQBdaklhIoCHRKtr6nEb2" target="_blank">
+            <img src="{{ url_for('static', filename='img/spotify.png') }}" alt="unifacvest" />
+          </a>
       </div>
 
       <div class="header-address-section">
@@ -76,6 +90,20 @@
             <img src="{{ url_for('static', filename='img/spotify.png') }}" alt="unifacvest" />
           </a>
       </div>
+        <div class="mobile-nav-wrapper mobile-nav-wrapper-open" >
+            <div class="action">
+                 <div>
+                    <span>MENU</span>
+                </div>
+                <div class="menu-btn" >
+                    <img src="{{ url_for('static', filename='img/menu.svg') }}" alt="unifacvest" />
+                </div>
+            </div>
+            <div class="nav-bar-mobile-items-container" >
+
+            </div>
+
+        </div>
     </header>
 
     {% block content %}
@@ -115,6 +143,7 @@
 
     <!-- JS default -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
+    <script src="{{ url_for('static', filename='js/template.js') }}"></script>
     {% block js %}
 
     {% endblock %}
