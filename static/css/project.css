@@ -2,19 +2,17 @@
     width: 100vw;
     height: 250px;
 
-    background: #200b8b;
-
     position: relative;
+
+     overflow: hidden;
 }
 
 
 @media (min-width: 1200px) {
     .banner-wrapper {
         width: 100vw;
-        height: 500px;
-    
-        background: #200b8b;
-    
+        height: 900px;
+
         position: relative;
 
         overflow: hidden;
@@ -22,9 +20,11 @@
 }
 
 .banner-wrapper img {
+    height: 100%;
     width: 100%;
     position: absolute;
-    bottom: -300px;
+    top: 0px;
+    left: 0px;
 }
 
 .banner-wrapper .title-container {
