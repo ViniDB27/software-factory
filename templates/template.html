@@ -90,7 +90,7 @@
             <img src="{{ url_for('static', filename='img/spotify.png') }}" alt="unifacvest" />
           </a>
       </div>
-        <div class="mobile-nav-wrapper mobile-nav-wrapper-open" >
+        <div class="mobile-nav-wrapper" >
             <div class="action">
                  <div>
                     <span>MENU</span>
@@ -100,7 +100,23 @@
                 </div>
             </div>
             <div class="nav-bar-mobile-items-container" >
-
+                    <div class="nav-bar-mobile-items" >
+                        <div>
+                            <a href="/">Inicio</a>
+                        </div>
+                        <div>
+                            <a href="/projects/">Projetos</a>
+                        </div>
+                        <div>
+                            <a href="/students/">Alunos</a>
+                        </div>
+                        <div>
+                            <a href="/responsible/">Responsaveis</a>
+                        </div>
+                        <div>
+                            <a href="/contact/">Contato</a>
+                        </div>
+                    </div>
             </div>
 
         </div>
@@ -112,7 +128,7 @@
 
     <div class="footer-wrapper">
       <div class="footer-section">
-        <img class="footer-logo" src="{{ url_for('static', filename='img/logo-header.jpeg') }}" alt="unifacvest" />
+        <img class="footer-logo" src="{{ url_for('static', filename='img/logo-footer.png') }}" alt="unifacvest" />
         <p>
           Estar entre as melhores universidade privadas do Brasil nos motiva e
           desafia a oferecer serviços de excelência com responsabilidade social.
